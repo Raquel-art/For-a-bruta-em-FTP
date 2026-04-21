@@ -27,3 +27,6 @@ medusa -h IP -U users.txt -P pass.txt -M http \
 -m FORM: 'username=^USER^&password=^PASS^&Login=login' \
 -m 'FAIL=Login Failed' -t 6
 Depois foi testado o acesso no formulário web. Importante que os sites estejam com criptografia e captcha para melhor a segurança.
+
+Técnicas possíveis de enumeração
+enum4linux -a IP | tee enum4_output.txt
